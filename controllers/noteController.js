@@ -17,7 +17,6 @@ exports.createNote = async (req, res) => {
         .json({ error: "Invalid input. Title and content are required." });
     }
 
-    // Additional validation for length, you can adjust as needed
     if (title.length > 255) {
       return res.status(400).json({
         error: "Title is too long. Maximum length is 255 characters.",
@@ -49,7 +48,6 @@ exports.updateNote = async (req, res) => {
         .json({ error: "Invalid input. Title and content are required." });
     }
 
-    // Additional validation for length, you can adjust as needed
     if (title.length > 255) {
       return res.status(400).json({
         error: "Title is too long. Maximum length is 255 characters.",
@@ -98,12 +96,13 @@ exports.getNoteById = async (req, res) => {
 // Delete a note by ID
 exports.deleteNote = async (req, res) => {
   try {
-    const deletedNote = await Note.findByIdAndRemove(req.params.id);
+    const deletedNote = await Note.findByIdAndDelete(req.params.id);
     if (!deletedNote) {
       return res.status(404).json({ error: "Note not found" });
     }
     res.json(deletedNote);
   } catch (error) {
+    console.error(error);
     res.status(500).json({ error: "Internal Server Error" });
   }
 };
