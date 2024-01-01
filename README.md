@@ -14,7 +14,7 @@ This project is a simple note-taking API that allows users to create, retrieve, 
 - Delete a note from the database
 - Data validation for note creation and updating
 - Comprehensive error handling
-- Basic authentication (optional)
+- Basic authentication
 - Documentation of API endpoints
 - Basic testing for API endpoints
 
