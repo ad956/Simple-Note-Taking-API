@@ -11,7 +11,7 @@ const PORT = process.env.PORT || 3000;
 const basicAuth = require("express-basic-auth");
 app.use(
   basicAuth({
-    users: { admin: "password" },
+    users: { admin: "pass" },
     challenge: true,
   })
 );
