@@ -1,0 +1,124 @@
+{
+    "client": "Thunder Client",
+    "collectionName": "simple_note",
+    "dateExported": "2024-01-01T09:32:41.874Z",
+    "version": "1.1",
+    "folders": [],
+    "requests": [
+        {
+            "_id": "09183cb4-d38b-464a-a958-1fdee9f0539c",
+            "colId": "d4b1fbbb-4b77-47b8-8514-42a12c574695",
+            "containerId": "",
+            "name": "create_note",
+            "url": "http://localhost:3000/api/notes",
+            "method": "POST",
+            "sortNum": 20000,
+            "created": "2024-01-01T09:20:25.758Z",
+            "modified": "2024-01-01T09:27:27.552Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"title\": \"ThirdvxbcvNote\",\n  \"content\": \"This is sda 3rd note.\"\n}",
+                "form": []
+            },
+            "auth": {
+                "type": "basic",
+                "basic": {
+                    "username": "admin",
+                    "password": "pass"
+                }
+            },
+            "tests": []
+        },
+        {
+            "_id": "aad0bf8a-bd89-4073-8547-99c1298563b7",
+            "colId": "d4b1fbbb-4b77-47b8-8514-42a12c574695",
+            "containerId": "",
+            "name": "get_notes",
+            "url": "http://localhost:3000/api/notes",
+            "method": "GET",
+            "sortNum": 30000,
+            "created": "2024-01-01T09:20:52.977Z",
+            "modified": "2024-01-01T09:25:10.435Z",
+            "headers": [],
+            "params": [],
+            "auth": {
+                "type": "basic",
+                "basic": {
+                    "username": "admin",
+                    "password": "pass"
+                }
+            },
+            "tests": []
+        },
+        {
+            "_id": "ce9bf417-6f02-46f0-a151-dc917dd87d3d",
+            "colId": "d4b1fbbb-4b77-47b8-8514-42a12c574695",
+            "containerId": "",
+            "name": "get_note_by_id",
+            "url": "http://localhost:3000/api/notes/659284a2c49db8ae30817e2f",
+            "method": "GET",
+            "sortNum": 40000,
+            "created": "2024-01-01T09:21:11.378Z",
+            "modified": "2024-01-01T09:26:13.682Z",
+            "headers": [],
+            "params": [],
+            "auth": {
+                "type": "basic",
+                "basic": {
+                    "username": "admin",
+                    "password": "pass"
+                }
+            },
+            "tests": []
+        },
+        {
+            "_id": "ff3b53d2-af69-46dd-ade1-f6673a97373b",
+            "colId": "d4b1fbbb-4b77-47b8-8514-42a12c574695",
+            "containerId": "",
+            "name": "update_note",
+            "url": "http://localhost:3000/api/notes/659284a2c49db8ae30817e2f",
+            "method": "PUT",
+            "sortNum": 50000,
+            "created": "2024-01-01T09:21:31.222Z",
+            "modified": "2024-01-01T09:27:11.165Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\r\n  \"title\": \"First Note\",\r\n  \"content\": \"Modified Content\"\r\n}\r\n  ",
+                "form": []
+            },
+            "auth": {
+                "type": "basic",
+                "basic": {
+                    "username": "admin",
+                    "password": "pass"
+                }
+            },
+            "tests": []
+        },
+        {
+            "_id": "24246d31-13a6-4480-a1b4-16bb9d109eb2",
+            "colId": "d4b1fbbb-4b77-47b8-8514-42a12c574695",
+            "containerId": "",
+            "name": "delete_note",
+            "url": "http://localhost:3000/api/notes/659284a2c49db8ae30817e2f",
+            "method": "DELETE",
+            "sortNum": 60000,
+            "created": "2024-01-01T09:21:40.786Z",
+            "modified": "2024-01-01T09:28:06.645Z",
+            "headers": [],
+            "params": [],
+            "auth": {
+                "type": "basic",
+                "basic": {
+                    "username": "admin",
+                    "password": "pass"
+                }
+            },
+            "tests": []
+        }
+    ]
+}
